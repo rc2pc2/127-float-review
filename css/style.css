@@ -1,0 +1,42 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+header,
+footer{
+    height: 100px;
+    background-color: lightblue;
+}
+
+main{
+    color: black;
+    height: calc(100vh - 200px);
+    background-color: aqua;
+}
+
+main > aside, 
+main > section{
+    float: left;
+    border: 2px solid magenta;
+    background-color: rgb(0, 8, 255);
+    height: 100%;
+    width: 20%;
+}
+
+main > section.posts{
+    width: 60%;
+    background-color: blanchedalmond;
+}
